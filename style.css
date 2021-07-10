@@ -1,0 +1,23 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+    border: solid 1px;
+    padding:0 5px ;
+}
+ul >a{text-align: right;
+ 
+}
+ul li{padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+nav{
+    display: inline;
+}
+
+ul li:hover{
+    text-decoration: none;
+    color: aquamarine;
+}

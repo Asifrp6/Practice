@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                background-color: firebrick;
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                top: 300px;
+                background-color: hotpink;
+                transform: scale(.5);
+            }
+
+            50% {
+                top: 0;
+                background-color: lawngreen;
+                transform: scale();
+
+            }
+
+            75% {
+                top: 300px;
+                background-color: orange;
+                transform: scale(.3);
+            }
+
+            100% {
+                background-color: purple;
+                left: 400px;
+                top: 0%;
+            }
+        }
+
+        .stage {
+            width: 500px;
+            height: 400px;
+            background-color: teal;
+        }
+
+        .ball {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: chartreuse;
+            border-radius: 50px;
+            animation: sliding 1s ease-in-out .5s 10 alternate;
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
